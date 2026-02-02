@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Syed Saqlain - Frontend Developer with 2+ years experience in React.js, Tailwind CSS & modern web applications. Based in Doha, Qatar.">
+    <meta name="keywords" content="Frontend Developer, React.js, Tailwind CSS, JavaScript, UI/UX, Syed Saqlain, Doha Qatar">
+    <meta name="author" content="Syed Saqlain">
+    <title>Syed Saqlain | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span><span></span><span></span>
+            </div>
+            <p class="preloader-text">Loading</p>
+        </div>
+    </div>
+
+    <!-- Cursor (desktop) -->
+    <div class="cursor" aria-hidden="true"></div>
+    <div class="cursor-follower" aria-hidden="true"></div>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">Syed<span>Saqlain</span>.</a>
+            <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+            <ul class="nav-menu" id="nav-menu" role="navigation" aria-label="Main menu">
+                
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-blur hero-blur-1"></div>
+            <div class="hero-blur hero-blur-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <p class="hero-badge reveal" data-delay="0">Based in Doha, Qatar · Available now</p>
+                <h1 class="hero-title reveal" data-delay="100">
+                    <span class="line">Hi, I'm</span>
+                    <span class="line name">Syed Saqlain</span>
+                </h1>
+                <p class="hero-subtitle reveal" data-delay="200">
+                    <span class="typing"></span>
+                </p>
+                <p class="hero-desc reveal" data-delay="300">Building modern, responsive & scalable web applications with React.js & Tailwind CSS. Open to Frontend / Web Developer opportunities.</p>
+                <div class="hero-actions reveal" data-delay="400">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get in touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="assests/SyedSaqlain_CV.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-social reveal" data-delay="500">
+                    <a href="https://github.com/syedsaqlain34" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/syed-saqlain-06330b318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/syed_saqlain34?igsh=MXNocWgxcjJnb2l3dA==" target="_blank" rel="noopener" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual reveal" data-delay="200">
+                <div class="hero-card">
+                    <div class="hero-card-glow" aria-hidden="true"></div>
+                    <div class="hero-img-wrap">
+                        <img src="images/my-pic.jpeg" alt="Syed Saqlain - Frontend Developer" class="hero-img" width="320" height="320">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">About me</span>
+                <h2 class="section-title">Who I am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-stats-wrap reveal">
+                    <div class="about-stats">
+                        <div class="stat">
+                            <strong class="stat-num" data-target="3">0</strong>
+                            <span>Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <strong class="stat-num" data-target="15">0</strong>
+                            <span>Projects Done</span>
+                        </div>
+                        <div class="stat">
+                            <strong class="stat-num" data-target="30">0</strong>
+                            <span>% UI Impact</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-lead reveal">I'm <strong>Syed Saqlain</strong>, a <span class="typing-2"></span> with <strong>2+ years</strong> of experience building modern, responsive, and scalable web applications.</p>
+                    <p class="reveal">I specialize in React-based dashboards & landing pages, authentication flows & API integration, Tailwind CSS & responsive UI design, and performance optimization for SEO-friendly apps. I've worked on real-world client projects including job portals, dashboards, and business websites in Agile environments.</p>
+                    <ul class="about-list reveal">
+                        <li><i class="fas fa-check"></i> React-based dashboards & landing pages</li>
+                        <li><i class="fas fa-check"></i> Authentication flows & API integration</li>
+                        <li><i class="fas fa-check"></i> Tailwind CSS & responsive UI design</li>
+                        <li><i class="fas fa-check"></i> Performance optimization & SEO-friendly apps</li>
+                        <li><i class="fas fa-check"></i> Agile workflows & Git / GitHub</li>
+                    </ul>
+                    <div class="about-meta reveal">
+                        <span><i class="fas fa-map-marker-alt"></i> Doha, Qatar</span>
+                        <span><i class="fas fa-id-card"></i> Transferable Iqama</span>
+                        <span><i class="fas fa-language"></i> English, Urdu, Hindi</span>
+                    </div>
+                    <a href="assests/SyedSaqlain_CV.pdf" download class="btn btn-primary reveal">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">Work history</h2>
+            </div>
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sep 2025 – Oct 2025</span>
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-company">CodeAlpha</p>
+                        <p class="timeline-location">Remote, Pakistan</p>
+                        <p>Innovative Frontend Developer focused on responsive, user-friendly web applications. Developed dynamic user interfaces using HTML, CSS, and JavaScript frameworks, resulting in a <strong>30% increase in user interaction</strong>.</p>
+                    </div>
+                </article>
+                <article class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan 2024 – Feb 2025</span>
+                        <h3>Frontend Web Developer</h3>
+                        <p class="timeline-company">Xenova Soft</p>
+                        <p class="timeline-location">Bahria Town Phase 8, Islamabad, Pakistan</p>
+                        <ul>
+                            <li>Developed responsive and SEO-optimized web interfaces using React.js and Tailwind CSS</li>
+                            <li>Built reusable UI components and scalable frontend architecture</li>
+                            <li>Collaborated with senior developers using Git and GitHub in Agile workflows</li>
+                            <li>Contributed to real client projects including landing pages and job portal interfaces</li>
+                            <li>Improved UI performance and cross-browser compatibility</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">Background</h2>
+            </div>
+            <div class="edu-card reveal">
+                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Bachelor of Science – Software Engineering</h3>
+                <p class="edu-school">Riphah International University</p>
+                <p class="edu-place">Pakistan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Services</span>
+                <h2 class="section-title">What I provide</h2>
+            </div>
+            <div class="services-grid">
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Responsive, SEO-optimized web interfaces using React.js, Tailwind CSS, HTML5 & JavaScript.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>UI/UX & Front-End Design</h3>
+                    <p>User-friendly interfaces, landing pages, and scalable frontend architecture.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, cross-browser compatible layouts that work on all devices.</p>
+                </article>
+                <article class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Performance & SEO</h3>
+                    <p>On-page optimization and performance tuning for faster, SEO-friendly apps.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technical expertise</h2>
+            </div>
+            <div class="skills-wrap">
+                <div class="skills-intro reveal">
+                    <p>I work with modern front-end technologies and tools to deliver clean, maintainable code and great user experiences.</p>
+                </div>
+                <div class="skills-grid reveal">
+                    <div class="skill-item" data-level="95">
+                        <div class="skill-header"><span>HTML5 & CSS3</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="92">
+                        <div class="skill-header"><span>React.js</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="92">
+                        <div class="skill-header"><span>Tailwind CSS</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="90">
+                        <div class="skill-header"><span>JavaScript (ES6+)</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="88">
+                        <div class="skill-header"><span>Git & GitHub</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                    <div class="skill-item" data-level="85">
+                        <div class="skill-header"><span>Node.js</span><span class="skill-pct">0%</span></div>
+                        <div class="skill-bar"><div class="skill-fill"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Featured work</h2>
+            </div>
+            <div class="project-filters reveal">
+                <button type="button" class="filter-btn active" data-filter="all">All</button>
+                <button type="button" class="filter-btn" data-filter="react">React</button>
+                <button type="button" class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button type="button" class="filter-btn" data-filter="ui">UI / Design</button>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card reveal" data-category="react">
+                    <div class="project-media">
+                        <img src="images/job-portal-pic.jpg" alt="Job Portal dashboard">
+                        <div class="project-overlay">
+                            <a href="Job-portaldashboard.netlify.app" target="_blank" rel="noopener" class="project-link">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Job Portal Dashboard</h3>
+                        <p>Modern project built with React and Tailwind CSS. Smooth animations and responsive design.</p>
+                        <div class="project-tags"><span>React</span><span>Tailwind</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-category="fullstack">
+                    <div class="project-media">
+                        <img src="images/Damelo.png" alt="Damelo Real Estate">
+                        <div class="project-overlay">
+                            <a href="https://damelo.vercel.app/" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Damelo Real Estate</h3>
+                        <p>Client project. Built with React.js & Tailwind CSS. Real estate platform with modern UI.</p>
+                        <div class="project-tags"><span>React</span><span>Tailwind</span><span>Client</span></div>
+                    </div>
+                </article>
+                <article class="project-card reveal" data-category="ui">
+                    <div class="project-media">
+                        <img src="images/coffee-shop-logo.jpg" alt="Coffee Shop Website">
+                        <div class="project-overlay">
+                            <a href="https://cafea.netlify.app" target="_blank" rel="noopener" class="project-link">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Coffee Shop</h3>
+                        <p>Single-page website with HTML, CSS & JavaScript. Two stakeholders (Buyer's & Seller's). Purpose: selling coffee to customers.</p>
+                        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+                <article class="project-card reveal" data-category="react">
+                    <div class="project-media">
+                        <img src="images/spark.jpeg" alt="Spark Landing Page">
+                        <div class="project-overlay">
+                            <a href="https://sparklandingpage.netlify.app/" target="_blank" rel="noopener" class="project-link">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Spark Landing Page</h3>
+                        <p>Modern landing page with React and Tailwind CSS. Smooth animations and responsive design.</p>
+                        <div class="project-tags"><span>React</span><span>Tailwind</span><span>JavaScript</span></div>
+                    </div>
+                </article>
+                <article class="project-card reveal" data-category="react">
+                    <div class="project-media">
+                        <img src="images/portfolio.png" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="https://myresume34.netlify.app" target="_blank" rel="noopener" class="project-link">View Live <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive single-page portfolio with smooth navigation and modern styling using React.</p>
+                        <div class="project-tags"><span>React</span><span>CSS</span><span>Responsive</span></div>
+                    </div>
+                </article>
+                
+                <article class="project-card reveal" data-category="fullstack">
+                    <div class="project-media">
+                        <img src="images/e-nursery.jpeg" alt="E-Nursery Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>E-Nursery Platform</h3>
+                        <p>Final year project: Flutter mobile app and web platform. Firebase backend for plant nursery management.</p>
+                        <div class="project-tags"><span>Flutter</span><span>Firebase</span><span>Web</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Get in touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p>I'm open to Frontend / Web Developer opportunities. Based in <strong>Doha, Qatar</strong> with transferable Iqama — available immediately.</p>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="contact-label">Name</span>
+                                <span>Syed Saqlain</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Doha, Qatar</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:software.engr34@gmail.com">software.engr34@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+97433949820">+974 33949820</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/syedsaqlain34" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/syed-saqlain-06330b318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/syed_saqlain34?igsh=MXNocWgxcjJnb2l3dA%3D%3D" target="_blank" rel="noopener" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://codepen.io" target="_blank" rel="noopener" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name *" required>
+                            <span class="error" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email *" required>
+                            <span class="error" id="email-error"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject *" required>
+                        <span class="error" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message *" required></textarea>
+                        <span class="error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p class="form-feedback" id="form-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <h3>Syed Saqlain</h3>
+                    <p>Frontend Developer · Doha, Qatar</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://github.com/syedsaqlain34" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href=https://www.linkedin.com/in/syed-saqlain-06330b318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/syed_saqlain34?igsh=MXNocWgxcjJnb2l3dA%3D%3D" target="_blank" rel="noopener" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; <span id="year"></span> Syed Saqlain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
