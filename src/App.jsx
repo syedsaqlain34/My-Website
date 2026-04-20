@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'E-Tutor',
     description: 'Modern Responsive E-Learning Platform built with React.js, Tailwind CSS, and Framer-Motion',
-    image: 'images/E-tutor1.webp',
+    image: '/images/E-tutor1.webp',
     href: 'https://e-tutor-tcj.netlify.app/',
     tags: ['React', 'Tailwind', 'FramerMotion']
   },
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Job Portal Dashboard',
     description: 'Modern project built with React and Tailwind CSS. Smooth animations and responsive design.',
-    image: 'images/job-portal-pic.jpg',
+    image: '/images/job-portal-pic.jpg',
     href: 'https://job-portaldashboard.netlify.app/',
     tags: ['React', 'Tailwind', 'JavaScript']
   },
@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Plant.Pk Shop',
     description: 'Pakistan premier online nursery. Shop plants, flowers, seeds and professional gardening services with doorstep delivery.',
-    image: 'images/plant,pk picture.jpg',
+    image: '/images/plant,pk picture.jpg',
     href: 'https://plant-pk-shop.vercel.app/',
     tags: ['React', 'Tailwind', 'JavaScript']
   },
@@ -45,21 +45,21 @@ const projects = [
   {
     title: 'Damelo Real Estate',
     description: 'Client project. Built with React.js & Tailwind CSS. Real estate platform with modern UI.',
-    image: 'images/Damelo.png',
+    image: '/images/Damelo.png',
     href: 'https://damelo.vercel.app/',
     tags: ['React', 'Tailwind', 'Client']
   },
   {
     title: 'Coffee Shop',
     description: 'Single-page website with HTML, CSS & JavaScript. Two stakeholders (Buyer and Seller).',
-    image: 'images/coffee-shop-logo.jpg',
+    image: '/images/coffee-shop-logo.jpg',
     href: 'https://cafea.netlify.app',
     tags: ['HTML', 'CSS', 'JavaScript']
   },
   {
     title: 'Spark Landing Page',
     description: 'Modern landing page with React and Tailwind CSS. Smooth animations and responsive design.',
-    image: 'images/spark.jpeg',
+    image: '/images/spark.jpeg',
     href: 'https://sparklandingpage.netlify.app/',
     tags: ['React', 'Tailwind', 'JavaScript']
   }
@@ -289,7 +289,7 @@ function App() {
               <div className="hero-card">
                 <div className="hero-card-glow" aria-hidden="true" />
                 <div className="hero-img-wrap">
-                  <img src="images/my-pic.jpeg" alt="Syed Saqlain - Frontend Developer" className="hero-img" width="320" height="320" />
+                  <img src="/images/my-pic.jpeg" alt="Syed Saqlain - Frontend Developer" className="hero-img" width="320" height="320" />
                 </div>
               </div>
             </div>
